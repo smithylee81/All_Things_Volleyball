@@ -60,7 +60,7 @@ body {
 .shop-now-button {
     background: rgb(35, 24, 228);
     color: rgb(252, 235, 41);
-    font-weight: 300;
+    font-weight: 600;
     font-family: 'Indie Flower';
     font-weight: 600;
 }
@@ -76,8 +76,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: rgb(252, 235, 41);
+    color: rgb(35, 24, 228);
 }
 
 .text-black {
@@ -91,6 +91,16 @@ body {
 .bg-black {
     background: rgb(247, 243, 122) !important;
     font: 200;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
@@ -116,3 +126,64 @@ body {
         padding-top: 164px;
     }
 }
+
+
+/*************** FOOTER *********************/
+
+  
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #faee6b;
+    color: rgb(22, 48, 244);
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 0px;
+   
+  }
+  
+  .copyright {
+    background-color:  #faee6b;
+    color: rgb(22, 48, 244);
+    padding: 0;
+    margin-top: 0;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 6px 2px;
+    
+  }
+  
+  .signature{
+    color: rgb(22, 48, 244);
+    font-size: 1rem;
+    font-family: 'Indie Flower';
+  }
+  
+  
+  .social-icons{
+    color: rgb(22, 48, 244);
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+  }
+  
+  .btn-xl {
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+  }
+  
+  .btn-social {
+    border-radius: 100%;
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    color: rgb(22, 48, 244);
+  }
