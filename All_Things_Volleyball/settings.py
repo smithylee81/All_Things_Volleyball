@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+""" Settings has been copied and
+    adapted from the CI's Boutique Ado project """
+
 from pathlib import Path
 import os
 

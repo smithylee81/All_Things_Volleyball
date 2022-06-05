@@ -1,7 +1,8 @@
 from django.db import models
 
 # Create your models here.
-
+""" Models has been copied and
+    adapted from the CI's Boutique Ado project """
 class Category(models.Model):
 
     class Meta:
