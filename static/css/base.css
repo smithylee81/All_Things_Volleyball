@@ -103,6 +103,21 @@ body {
 	z-index: -1;
 }
 
+/* -----------Images ----------------------- */
+
+.img-fluid {
+    text-align: center; 
+    border-radius: 6px;
+    width: 175px;
+    height: 200px;
+    background-color: white;
+  
+  }
+  .row {
+    display: flex;
+    margin: auto;
+  }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
