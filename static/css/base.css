@@ -1,3 +1,6 @@
+/* CSS has been copied and
+adapted from the CI's Boutique Ado project */
+
 html {
     height: 100%;
 }
@@ -101,6 +104,11 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background:rgb(35, 24, 228)!important;
+    color: rgb(247, 243, 122)!important;
 }
 
 /* -----------Images ----------------------- */
