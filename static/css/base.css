@@ -111,6 +111,19 @@ a.category-badge > span.badge:hover {
     color: rgb(247, 243, 122)!important;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+
 /* -----------Images ----------------------- */
 
 .img-fluid {
