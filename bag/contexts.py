@@ -1,3 +1,5 @@
+# Contexts has been copied and adapted from the CI's Boutique Ado project
+
 from decimal import Decimal
 from django.conf import settings
 
