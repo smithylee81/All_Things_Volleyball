@@ -110,7 +110,8 @@ input.btn.btn-black.rounded-0.text-uppercase.mt-5{
     background-color: rgb(24, 112, 228);
 }
 
-a.btn.btn-black.btn-block.rounded-0{
+a.btn.btn-black.btn-block.rounded-0,
+.my-2{
     background-color:rgb(222, 220, 220);
     font-weight: bold;
     text-shadow:rgb(24, 23, 23) 0px 0px 8px;
