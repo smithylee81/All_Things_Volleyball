@@ -113,9 +113,7 @@ input.btn.btn-black.rounded-0.text-uppercase.mt-5{
 a.btn.btn-black.btn-block.rounded-0{
     background-color:rgb(222, 220, 220);
     font-weight: bold;
-    text-shadow:rgb(38, 37, 37) 0px 0px 8px;
-    stroke-width: 5px;
-    
+    text-shadow:rgb(24, 23, 23) 0px 0px 8px;
 }
 
 .shop-now-button:hover,
