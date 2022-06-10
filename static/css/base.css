@@ -85,6 +85,8 @@ body {
     width: fit-content;
 }
 
+/***************************************** Buttons */
+
 .shop-now-button {
     background: rgb(35, 24, 228);
     color: rgb(252, 235, 41);
@@ -106,6 +108,14 @@ body {
 
 input.btn.btn-black.rounded-0.text-uppercase.mt-5{
     background-color: rgb(24, 112, 228);
+}
+
+a.btn.btn-black.btn-block.rounded-0{
+    background-color:rgb(222, 220, 220);
+    font-weight: bold;
+    text-shadow:rgb(38, 37, 37) 0px 0px 8px;
+    stroke-width: 5px;
+    
 }
 
 .shop-now-button:hover,
@@ -210,6 +220,58 @@ a.category-badge > span.badge:hover {
 .toast-capper {
     height: 2px;
 }
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 
 /* -------------------------------- Media Queries */
 
