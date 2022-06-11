@@ -271,6 +271,16 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+/* ------------------ Checkout Success Form */
+
+p.small.mb-0.text-black.font-weight-bold{
+    font-family: 'Lobster', cursive;
+}
+
+p.mb-0.text-black.font-weight-bold {
+    font-family: 'Lobster', cursive;
+}
+
 
 /* -------------------------------- Media Queries */
 
