@@ -295,7 +295,7 @@ p.mb-0.text-black.font-weight-bold {
   }
 }
 
-/* Allauth form formatting */
+/****************************************************** Allauth form formatting */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -375,65 +375,3 @@ p.mb-0.text-black.font-weight-bold {
         height: calc(100vh - 116px);
     }
 }
-
-
-/*************** FOOTER *******************
-
-  
-  .footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #faee6b;
-    color: rgb(22, 48, 244);
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 4px 0px;
-   
-  }
-  
-  .copyright {
-    background-color:  #faee6b;
-    color: rgb(22, 48, 244);
-    padding: 0;
-    margin-top: 0;
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 6px 2px;
-    
-  }
-  
-  .signature{
-    color: rgb(22, 48, 244);
-    font-size: 1rem;
-    font-family: 'Indie Flower';
-  }
-  
-  
-  .social-icons{
-    color: rgb(22, 48, 244);
-    font-size: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-   
-  }
-  
-  .btn-xl {
-    padding: 1rem 1.75rem;
-    font-size: 1.25rem;
-  }
-  
-  .btn-social {
-    border-radius: 100%;
-    display: inline-flex;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.25rem;
-    justify-content: center;
-    align-items: center;
-    color: rgb(22, 48, 244);
-  }
-  */

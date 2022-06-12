@@ -1,0 +1,39 @@
+
+/* CSS from CI's Boutique Ado project - START */
+
+#profile-update-form .form-control {
+    color: #000;
+}
+
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
+
+
+/* CSS from CI's Boutique Ado project - END */
+
+/* OWN CUSTOM CSS */
+
+.btn.btn-black.rounded-0.text-uppercase.float-right{
+    background-color:rgb(17, 58, 237);
+    font-weight: bold;
+    text-shadow:rgb(24, 23, 23) 0px 0px 8px;
+    text-outline: 1px black solid;
+}
+
+.btn-black.rounded-0.text-uppercase.float-right:hover,
+.btn-black.rounded-0.text-uppercase.float-right:active,
+.btn-black.rounded-0.text-uppercase.float-right:focus {
+    background: rgb(252, 235, 41);
+    color: rgb(35, 24, 228);
+    font-weight: 900;
+}
