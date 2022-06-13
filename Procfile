@@ -1,0 +1,1 @@
+web: gunicorn All_Things_Volleyball.wsgi:application
