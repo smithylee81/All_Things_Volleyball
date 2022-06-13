@@ -36,7 +36,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['all-things-volleyball.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -211,3 +211,5 @@ DEFAULT_FROM_EMAIL = 'AllThingsVolleyball@example.com'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
