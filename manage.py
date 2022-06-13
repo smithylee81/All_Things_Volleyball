@@ -20,3 +20,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""Download local mySQL database for upload to postgress"""
+# DATABASE = 
