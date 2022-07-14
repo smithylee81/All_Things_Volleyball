@@ -44,7 +44,18 @@ I created the site to give an outdoor sun and beach feel in keeping with a beach
 
 ## **UX (User Experience)**
 
+### **User Stories**
+- As a family member/user visiting the site for the first time:
+  - I want to be able to see social media links so that I can keep in contact with the site owner through Facebook, LinkedIn, GitHub and Discord (for the IT geeks of the family).
+  - I want to click navigation links to be taken to the correct section and back to the home page for a good user experience.
+  - I want the page to be simple in its layout so that I can navigate it easily.  
+  - I want to easily understand the main purpose of the site and navigate with ease to read other family members recipes, create my own recipe cards and update and/or delete where necessary.
 
+- As a user returning to the site:
+  - I want to be able to access the site easily on my chosen device
+  - I want to easily be able to navigate to different parts of the site
+  - I want to be able to create more recipes or read any new recipes that have been added.
+ 
 ### **User Stories**
 
 story id | As a | I want to be able to | So that I can
@@ -73,5 +84,14 @@ story id | As a | I want to be able to | So that I can
 23.     |Store Owner|Edit/update product|
 24.     |Store Owner| Delete a product|Remove item that is no longer for sale.
 
-*PLEASE NOTE THE DEVELOPER RAN OUT OF TIME TO FULLY COMPLETE README.md AND TESTING.md, TIME CONSTRAINTS ++*
+### **Site Owner Goals** 
+- As a site owner I want to achieve an overall easy to use shopping site for everything volleyball related.
+- As a site owner I want to ensure the site is safe and secure for all users.
+- As a site owner I want users to have a clear, 
+- As a site owner I want to create a website with a great user experience so that family members will enjoy using the app again and again and keeping the family history alive.
+
+[Back to contents](#contents)
+## **Design Choices**
+
+### **Fonts**
 
