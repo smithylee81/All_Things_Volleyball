@@ -679,7 +679,8 @@ https://all-things-volleyball.herokuapp.com/checkout/wh/
 
 - README.md & TESTING.md help came from: 
   -[Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
-  -CI Mentors – Ronan McClelland & Spencer Barriball, thank you for your continued support, guidance, constructive feedback and encouragement. 
+  -CI Mentor – Spencer Barriball, thank you for your continued support, guidance, constructive feedback and encouragement. 
+  -Code Institute Student Melinda Zhang_alum Git Hub Repository for template on deployment details for MS4 project (https://github.com/MelindaZhang2020/CI-MS4-kumite-dojo#deployment)
   
 ### **Layout**
 
