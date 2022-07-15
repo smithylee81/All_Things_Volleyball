@@ -108,8 +108,62 @@ Wireframes were created using 'Balsamiq' hand drawn and can be found in pdf form
 
 [Back to contents](#contents)
 
+## **Technologies**
 
+### **Languages**
 
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - Used as the main markup language for the website content.
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  - Used to style the individual webpages.
+- [Python](https://developer.mozilla.org/en-US/docs/Glossary/jQuery) 
+- [JavaScript]( https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Django](https://www.djangoproject.com/)
+  - "A high-level Python web framework that encourages rapid development and clean, pragmatic design".
+  
+### **Libraries**
+
+- [Bootstrap CDN](https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js)
+  - Used to design a mobile-first responsive website layout along with custom components.
+- [JQuery](https://code.jquery.com/jquery-3.4.1.min.js)
+- [JSDeliver](https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js)
+- [Bootstrap CDN](https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js)
+
+### **Tools**
+
+- [Git](https://git-scm.com/)
+  - Git was used for version control (commit to Git and push to GitHub).
+- [GitHub](https://github.com/)
+  - Used to store, host and deploy the project files and source code after being pushed from Git. 
+- [Gitpod](https://www.gitpod.io/)
+  - An online IDE linked to the GitHub repository used to write my code.
+- [Font-Awesome](https://fontawesome.com)
+  - Used for user/account and shopping bag icons.
+- [Google fonts](https://fonts.google.com/)
+  - Used to compare and choose fonts. 
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+  - Used to audit the site for quality and ensure responsiveness.
+- [WebPageTest](https://www.webpagetest.org/)
+  - Used to test performance.
+- [amiresponsive](http://ami.responsivedesign.is/)
+  - An online tool to check how responsive the site is on different devices.
+- [W3C CSS Validation Service]( https://jigsaw.w3.org/css-validator/#validate_by_input)
+  - Used to validate the CSS
+- [W3C Markup Validation Service]( https://validator.w3.org/#validate_by_input)
+  - Used to validate the HTML
+- [Heroku]( https://dashboard.heroku.com/apps)
+  - Used to launch the live website
+- [Django]()
+  - Used to create the products database and allow admin superusers to add, update and delete items.
+
+[Back to contents](#contents)
+
+## **Features**
+
+### **Features Implemented**
+
+Features relevant to all pages:
+- **base.html - Header & Navigation Bar**
 
 
 
