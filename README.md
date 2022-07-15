@@ -45,18 +45,6 @@ I created the site to give an outdoor sun and beach feel in keeping with a beach
 ## **UX (User Experience)**
 
 ### **User Stories**
-- As a family member/user visiting the site for the first time:
-  - I want to be able to see social media links so that I can keep in contact with the site owner through Facebook, LinkedIn, GitHub and Discord (for the IT geeks of the family).
-  - I want to click navigation links to be taken to the correct section and back to the home page for a good user experience.
-  - I want the page to be simple in its layout so that I can navigate it easily.  
-  - I want to easily understand the main purpose of the site and navigate with ease to read other family members recipes, create my own recipe cards and update and/or delete where necessary.
-
-- As a user returning to the site:
-  - I want to be able to access the site easily on my chosen device
-  - I want to easily be able to navigate to different parts of the site
-  - I want to be able to create more recipes or read any new recipes that have been added.
- 
-### **User Stories**
 
 story id | As a | I want to be able to | So that I can
 ---------|------|----------------------|--------------
@@ -94,4 +82,35 @@ story id | As a | I want to be able to | So that I can
 ## **Design Choices**
 
 ### **Fonts**
+
+I wanted to create a relaxed feel and therefore utilised the Googe Fonts 'Indie Flower' font ['https://fonts.google.com/specimen/Indie+Flower']
+### **Colours**
+
+As the site purpose is to display a Volleyballe themed shopping site I chose the typical colour of the MIKASA Volleyball brand which is Blue, Yellow and White. Most Volleyball players are familiar with these colours. I decided to use the standard RGB colours rather than a colour palette this time.
+
+### **Imagery**
+
+Images feature a Beach Volleyball court in the sand for the home page background. 
+
+The image was sourced from:
+
+1. [pixabay.com](https://pixabay.com/photos/lake-grid-volleyball-beach-5374190/) 
+
+### **Wireframes**
+
+Wireframes were created using 'Balsamiq' hand drawn and can be found in pdf form in [wireframes](/workspace/All_Things_Volleyball/All_Things_Volleyball/Wireframes)
+
+- [Home Page - Desktop](/workspace/All_Things_Volleyball/static/Wireframes/HomePageDesktop.png)
+- [Home Page - Tablet & Mobile](/workspace/All_Things_Volleyball/static/Wireframes/HomePageTabletMobile.png)
+- [Product Page - Desktop](/workspace/All_Things_Volleyball/static/Wireframes/ProductPageDesktop.png)
+- [Product Page - Tablet & Mobile](/workspace/All_Things_Volleyball/static/Wireframes/ProductPageTabletMobile.png)
+
+
+[Back to contents](#contents)
+
+
+
+
+
+
 
