@@ -138,7 +138,7 @@ Wireframes were created using 'Balsamiq' hand drawn and can be found in pdf form
 - [Gitpod](https://www.gitpod.io/)
   - An online IDE linked to the GitHub repository used to write my code.
 - [Font-Awesome](https://fontawesome.com)
-  - Used for user/account and shopping bag icons.
+  - Used for user/account, search bar and shopping bag icons.
 - [Google fonts](https://fonts.google.com/)
   - Used to compare and choose fonts. 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
@@ -165,6 +165,37 @@ Wireframes were created using 'Balsamiq' hand drawn and can be found in pdf form
 Features relevant to all pages:
 - **base.html - Header & Navigation Bar**
 
+- **Register Form**
+    - For the user to register & create their own account. It requests an email address, username and password to provide Log In details and access to their own profile/account. Fields: Email, Username and Password are required and display an error message if not filled in when selecting the 'sign up' button. Email address and password confirmation fields are also present for additional security checks at sign-in and a 'Back to Log In' button is also available should the user remember that they already have an account.
 
+- **Sign-In Form**
+    - For the user to sign-in to their own profile/account. Fields: Username and Password are required and display an error message if not filled in when clicking sign in button. The user also has the option to select the 'Remember Me' button also for ease of use on return to the site.
+
+
+### **Future Features**
+- I would like to incorporate API's to this website to help pull all volleyball related products from different sites, allowing for more choice and variety of products.
+- I 
+
+[Back to contents](#contents)
+
+### **Responsive Design**
+
+- Bootstrap and media queries were used to make the site responsive on all devices.
+
+[Back to contents](#contents)
+
+## **Version Control**
+
+**Version control** managed within **GitHub** & **Gitpod** with regular commits pushed to **GitHub**:
+
+[Back to contents](#contents)
+
+## **Testing**
+
+Testing documentation, processes, and outcomes can be found under [TESTING.md](TESTING.md).
+
+---
+
+### **Performance Testing**
 
 
