@@ -68,16 +68,25 @@ The Main README documentation can be found under [README.md](README.md)
 ![Reg Username Required](static/testingimages/RegUsernameRequired.png "RegUsernameRequired")
 ![Reg Password Required](static/testingimages/RegPasswordRequired.png "RegPasswordRequired")
 ![Reg Password Repeat Required](static/testingimages/RegPasswordRepeatRequired.png "RegPasswordRepeatRequired")
+![Pass Too Short Note](static/testingimages/PassTooShortNote.png "PassTooShortNote")
 ![User Email Already Registered](static/testingimages/UserEmailAlreadyRegistered.png "UserEmailAlreadyRegistered")
 ![User Name Already Exists](static/testingimages/UserNameAlreadyExists.png "UserNameAlreadyExists")
 ![Email Verification Notice](static/testingimages/EmailVerificationNotice.png "EmailVerificationNotice")
-
-![User Name Already Exists](static/testingimages/UserNameAlreadyExists.png "UserNameAlreadyExists")
-![User Name Already Exists](static/testingimages/UserNameAlreadyExists.png "UserNameAlreadyExists")
+![Terminal Verification Email](static/testingimages/TerminalVerificationEmail.png "TerminalVerificationEmail")
+![Confirm Email Note](static/testingimages/ConfirmEmailNote.png "ConfirmEmailNote")
+![Confirmed Email Success](static/testingimages/ConfirmedEmailSuccess.png "ConfirmedEmailSuccess")
+![Confirmed Email Terminal](static/testingimages/ConfirmedEmailTerminal.png "ConfirmedEmailTerminal")
 
 **Outcome: Pass**
 
 - #### Log In
+
+**Acceptance Criteria**: A user should be able to sign in to their account and have the option to view their profile.
+
+**Summary:** Sign in form is easy to use, has pre-fixes in the required fields and a "Sign Up" button. The form also has warning messages for any fields left blank to advise the user to fully complete their information. 
+
+![Sign In Success](static/testingimages/SignInSuccess.png "SignInSuccess")
+
   - #### Forgot Password
 
 
