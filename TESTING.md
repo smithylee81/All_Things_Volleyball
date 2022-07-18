@@ -9,6 +9,8 @@ The Main README documentation can be found under [README.md](README.md)
   - [**My Account Testing**](#my-account-testing)
     - [Register](#register)
     - [Log In](#log-in)
+     >1. [Forgot Password](#forgot-password)
+     >2. [My Profile](#my-profile)
     - [Product Management](#product-management)
   - [**Shopping Bag Testing**](#shopping-bag-testing)
     - [Shopping Bag Empty Keep Shopping](#shopping-bag-empty-keep-shopping)
@@ -57,15 +59,48 @@ The Main README documentation can be found under [README.md](README.md)
 ### ***My Account Testing***
 - #### Register
 
-**Acceptance Criteria**: A user should be able to 
+**Acceptance Criteria**: A user should be able to register for an account, have an option to sign-in form that selection if they remember they "Already have an Account"? and be able to see clearly what sections of the registration form to complete and a clear indication of what information is required ie: **E-mail address**, **Username** and **Password**. The user should also be given hints if any fields are left blank and if their email address or username is already registered oe exists for another user. The user should recieve an email verification process.
 
-**Summary:**
+**Summary:** Form is easy to use, has pre-fixes in the required fields and a "Sign Up" button. The form also has warning messages for any fields left blank to advise the user to fully complete their information. 
 
+![account register form](static/testingimages/accountregisterform.png "accountregisterform")
+![Reg Email Required](static/testingimages/RegEmailRequired.png "RegEmailRequired")
+![Reg Username Required](static/testingimages/RegUsernameRequired.png "RegUsernameRequired")
+![Reg Password Required](static/testingimages/RegPasswordRequired.png "RegPasswordRequired")
+![Reg Password Repeat Required](static/testingimages/RegPasswordRepeatRequired.png "RegPasswordRepeatRequired")
+![User Email Already Registered](static/testingimages/UserEmailAlreadyRegistered.png "UserEmailAlreadyRegistered")
+![User Name Already Exists](static/testingimages/UserNameAlreadyExists.png "UserNameAlreadyExists")
+![Email Verification Notice](static/testingimages/EmailVerificationNotice.png "EmailVerificationNotice")
 
-**Outcome: Pass/Fail**
+![User Name Already Exists](static/testingimages/UserNameAlreadyExists.png "UserNameAlreadyExists")
+![User Name Already Exists](static/testingimages/UserNameAlreadyExists.png "UserNameAlreadyExists")
 
+**Outcome: Pass**
 
 - #### Log In
+  - #### Forgot Password
+
+
+
+  - #### My Profile
+
+**Acceptance Criteria**: A user should be able to access their own profile easily onced logged in and view my 'Default Delivery Information' & my 'Order History'.
+
+**Summary:** Profile selection works well upon log-in and displays both delivery information and order history. 
+
+![My Profile Test](static/testingimages/myprofiletest.png "myprofiletest")
+
+
+**Outcome: Pass**
+
+  - #### Update Information
+
+**Acceptance Criteria**: A user should be able to access their own profile easily & update their delivery information. 
+
+**Summary:** Update information button easy to see and saves new information accordingly with a **toast** alert section confirming the "profile updated successfully".
+
+![Update Info Test](static/testingimages/updateinfotest.png "updateinfotest")
+
 - #### Product Management
 
 

@@ -1,12 +1,12 @@
 <h1 align="center">All Things Volleyball</h1>
 
-<h2 align="center"><img src=" "></h2>
+<h2 align="center"><img src="/workspace/All_Things_Volleyball/static/testingimages/responsive.png"></h2>
 
 ## About
 
 An e-commerce website specifically relating to Volleyball clothing, accessories, and equipment, in other words ‘All Things Volleyball’. I, the developer, am a keen Volleyball player at Amateur level and play in a local club. Having an outdoor Tournament approaching I noticed that trying to find any volleyball related products seem to be on lots of different websites and I thought, why not have one place for everything I need? The website is designed to be responsive and accessible on a wide range of devices, making it easy for everyone to access and use whether they're on the go or sitting at a desktop.
 
-I created the site to give an outdoor sun and beach feel in keeping with a beach volleyball theme. Sky & water blue colours with Sun yellow colours to achieve the theme.
+I created the site to give an outdoor sun and beach feel in keeping with a beach volleyball theme. Sky & water blue colours with Sun yellow colours to achieve the theme which aslso coincides with the 'Mikasa' Volleyball Ball brand colouring.
 
 [View the live project here.](https://all-things-volleyball.herokuapp.com/)
 
@@ -138,6 +138,10 @@ Wireframes were created using 'Balsamiq' hand drawn and can be found in pdf form
 - [sqlite3](https://www.sqlite.org/index.html)
 
 - [Heroku Postgres](https://www.heroku.com/postgres)
+
+A relational database is best suited to this project given the number of relationships between the models. SQLite was used during development and Heroku Postgres in production. The diagram below may help visualise the database and relationships between each model.
+
+![database-schema](static/.png)
 
 ### **Extensions and kits**
 
