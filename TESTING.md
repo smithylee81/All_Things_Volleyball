@@ -44,14 +44,19 @@ The Main README documentation can be found under [README.md](README.md)
     - [Keep Shopping](#keep-shopping)
     - [Add to Bag](#add-to-bag)
     - [Go to secure checkout](#go-to-secure-checkout)
-- [**Code Validation**](#code-validation)
+- [**Validators and Tools**](#validators-and-tools)
 - [**Significant Bugs**](#significant-bugs)
 - [**Browser Testing**](#browser-testing)
+- [**Mobile and Tablet Testing**](#mobile-and-tablet-testing)
+- [**Additional Testing**](#additional-testing)
+- [**Further possible improvements**](#further-possible-improvements)
+
 
 ## **User Story Testing**
 ## Home Page Testing
 ### ***My Account Testing***
-#### Register
+- #### Register
+
 **Acceptance Criteria**: A user should be able to 
 
 **Summary:**
@@ -60,25 +65,28 @@ The Main README documentation can be found under [README.md](README.md)
 **Outcome: Pass/Fail**
 
 
-
-#### Log In
-#### Product Management
+- #### Log In
+- #### Product Management
 
 
 [Back to contents](#contents)
 ### ***Shopping Bag Testing***
-#### Shopping Bag Empty Keep Shopping
-#### Update Quantity
-#### Remove Item
-#### Keep Shopping
-#### Secure Checkout
- - ##### Adjust Bag
- - ##### Complete Order
+- #### Shopping Bag Empty Keep Shopping
+- #### Update Quantity
+- #### Remove Item
+- #### Keep Shopping
+- #### Secure Checkout
+  - ##### Adjust Bag
+  - ##### Complete Order
 
 [Back to contents](#contents)
 
 ### ***Search Bar Testing***
+
+
 ### ***Main Logo Testing***
+
+
 
 [Back to contents](#contents)
 
@@ -130,26 +138,19 @@ The Main README documentation can be found under [README.md](README.md)
 
 [Back to contents](#contents)
 
-# Code Validation
+# Validators and Tools
+### W3C Markup Validation
+<!-- * [W3C Markup Validation](https://validator.w3.org/) was used to validate the HTML codes of the website in all pages. There were only minor errors and warnings such as duplication of class, missing attributes in form fields, missing session heading, etc. They were all fixed accordingly to show no errors afterwards. Labels for form fields were added to make it more accessible. -->
 
-## HTML
+### W3C CSS Validation
+<!-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check the CSS syntax. The results show no errors and warnings but the warnings are about prefixes for vendors as I have ran my css codes through a autoprefixer tool. -->
 
-- 
-
-### Errors:
-
-
-## CSS
-
-### Errors:
-
-## JavaScript
-
-### Errors:
-
-## Python
-
-### Errors:
+### JSHint
+<!-- * [JSHint](https://jshint.com/) was used to check the JavaScript syntax. There were also minor warnings such as missing semicolons and missing variable declaration which were all fixed accordingly. There are still some warnings about unused variables and functions but it is because some of the variables are from Bootstrap (such as `scrollspy`, `bootstrap`), Stripe, or other javascript files.
+  ![]()
+  ![]() -->
+### PEP8 Online
+<!-- * [PEP8 Online](https://pep8online.com/) was used to check the Python syntax.  -->
 
 
 [Back to contents](#contents)
@@ -204,13 +205,14 @@ The Main README documentation can be found under [README.md](README.md)
 
 
 
-[Back to contents](#contents)
 
-## Additional Testing
+### Additional Testing
 
 
-## Chrome/Firefox/Edge/Safari (iOS)
 
+### Further possible improvements
+<!-- * Further refactoring could have been done to improve clean code and readability. This was done only to small extend due to the time constraint.
+* A more custom designed page for admin dashboard could have been implemented in order to give shop owners a much better user experience in controlling and maintaining the database. -->
 
 ---
 [Back to contents](#contents)
