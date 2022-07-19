@@ -11,9 +11,11 @@ The Main README documentation can be found under [README.md](README.md)
     - [Log In](#log-in)
      >1. [Forgot Password](#forgot-password)
      >2. [My Profile](#my-profile)
+     >3. [Update Information](#update-information)
     - [Product Management](#product-management)
   - [**Shopping Bag Testing**](#shopping-bag-testing)
     - [Shopping Bag Empty Keep Shopping](#shopping-bag-empty-keep-shopping)
+    - [Add to Bag](#add-to-bag)
     - [Update Quantity](#update-quantity)
     - [Remove Item](#remove-item)
     - [Keep Shopping](#keep-shopping)
@@ -53,11 +55,10 @@ The Main README documentation can be found under [README.md](README.md)
 - [**Additional Testing**](#additional-testing)
 - [**Further possible improvements**](#further-possible-improvements)
 
-
-## **User Story Testing**
+# **User Story Testing**
 ## Home Page Testing
 ### ***My Account Testing***
-- #### Register
+- ## Register
 
 **Acceptance Criteria**: A user should be able to register for an account, have an option to sign-in form that selection if they remember they "Already have an Account"? and be able to see clearly what sections of the registration form to complete and a clear indication of what information is required ie: **E-mail address**, **Username** and **Password**. The user should also be given hints if any fields are left blank and if their email address or username is already registered oe exists for another user. The user should recieve an email verification process.
 
@@ -79,26 +80,39 @@ The Main README documentation can be found under [README.md](README.md)
 
 **Outcome: Pass**
 
-- #### Log In
+- ## Log In
 
-**Acceptance Criteria**: A user should be able to sign in to their account and have the option to view their profile.
+**Acceptance Criteria**: A user should be able to sign in to their account and have the option to view their profile, see their default delivery details and order history.
 
-**Summary:** Sign in form is easy to use, has pre-fixes in the required fields and a "Sign Up" button. The form also has warning messages for any fields left blank to advise the user to fully complete their information. 
+**Summary:** Sign in form is easy to use, has pre-fixes in the required fields and a "Sign Up" button. The form also has warning messages for any fields left blank to advise the user to fully complete their information, as per the above screenshots. 'Toast' messsges are also displayed ot tell the user they have successfully signed in.
 
 ![Sign In Success](static/testingimages/SignInSuccess.png "SignInSuccess")
 
-  - #### Forgot Password
+**Outcome: Pass**
 
+- ### Forgot Password
 
+**Acceptance Criteria**: A user should be able to have the facility to reset their password should they forget it and go back to the login page should they remember it. The user should have clear instructions and information on what to do next.
 
-  - #### My Profile
+**Summary:** Forgotten password form easy to use, has pre-fixes in the required field and a "Reset my Password" button. The form also has warning messages for any fields left blank to advise the user to fully complete their information, as per the above screenshots. 'Toast' messsges are also displayed ot tell the user they have successfully signed in.
+
+![Pass Reset Option](static/testingimages/PassResetOption.png "PassResetOption")
+![Pass Reset Warning](static/testingimages/PassResetWarning.png "PassResetWarning")
+![Pass Reset Instructions](static/testingimages/PassResetInstructions.png "PassResetInstructions")
+![Pass Reset Email Terminal](static/testingimages/PassResetEmailTerminal.png "PassResetEmailTerminal")
+![Change Pass Option](static/testingimages/ChangePassOption.png "ChangePassOption")
+![Password Warning Note](static/testingimages/PasswordWarningNote.png "PasswordWarningNote")
+![Pass Change Success Note](static/testingimages/PassChangeSuccessNote.png "PassChangeSuccessNote")
+
+**Outcome: Pass**
+
+  - ### My Profile
 
 **Acceptance Criteria**: A user should be able to access their own profile easily onced logged in and view my 'Default Delivery Information' & my 'Order History'.
 
 **Summary:** Profile selection works well upon log-in and displays both delivery information and order history. 
 
 ![My Profile Test](static/testingimages/myprofiletest.png "myprofiletest")
-
 
 **Outcome: Pass**
 
@@ -110,35 +124,67 @@ The Main README documentation can be found under [README.md](README.md)
 
 ![Update Info Test](static/testingimages/updateinfotest.png "updateinfotest")
 
-- #### Product Management
+**Outcome: Pass**
 
-
-[Back to contents](#contents)
+- ## Product Management
 ### ***Shopping Bag Testing***
+
+**Acceptance Criteria**: A user should be able to add items to their shopping bag, access their shopping bag, have the option to update the quantity of their selections, remove items they no longer require, an option to keep shopping and an option to go to the secure checkout. They should be able to complete their order securely and have clear instructions throughout with an option to adjust their shopping bag even at the point of the secure checkout.
+
+**Summary:** All options for the above criteria are available and work well providing the user with ease of use for their shopping experience.
+
 - #### Shopping Bag Empty Keep Shopping
+![Bag Empty Note](static/testingimages/BagEmptyNote.png "BagEmptyNote")
+- #### Add to Bag
+![Add To Bag Note](static/testingimages/AddToBagNote.png "AddToBagNote")
 - #### Update Quantity
+![Update Bag Quantity](static/testingimages/UpdateBagQuantity.png "UpdateBagQuantity")
 - #### Remove Item
+![Remove Bag Item](static/testingimages/RemoveBagItem.png "RemoveBagItem")
 - #### Keep Shopping
+![Keep Shopping Option](static/testingimages/KeepShoppingOption.png "KeepShoppingOption")
 - #### Secure Checkout
+![Secure Checkout Option](static/testingimages/SecureCheckoutOption.png "SecureCheckoutOption")
+
   - ##### Adjust Bag
+![Adjust Bag Option](static/testingimages/AdjustBagOption.png "AdjustBagOption")
   - ##### Complete Order
+![Complete Order](static/testingimages/CompleteOrder.png "CompleteOrder")
+
+**Outcome: Pass**
 
 [Back to contents](#contents)
-
 ### ***Search Bar Testing***
 
+**Acceptance Criteria**: A user should be able to search for items on the site and receive back the correct items.
 
+**Summary:** All search criteria tried and brings back the correct items requested each time.
+
+**Outcome: Pass**
 ### ***Main Logo Testing***
 
+**Acceptance Criteria**: A user should be able to select the main logo to take them back to the home page no matter what page of the site they are on.
 
+**Summary:** Main logo on all pages works well bringing the user back to the home page.
+
+**Outcome: Pass**
 
 [Back to contents](#contents)
 
 ## Product Category Testing
+
+**Acceptance Criteria**: A user should also be able to use the selection bar at the top of the page to browse and select out the items they wish. Each section and dropdown should provide the user with their specific request.
+
+**Summary:** All options selected from the selection bar and dropdown menu's display the correct items requested each time as demonstrated below.
+
+**Outcome: Pass**
 ### ***All Products***
  - ##### By Price
+
  - ##### By Rating
+
  - ##### By Category
+
  - ##### All Products
 
 ### ***Clothing***
