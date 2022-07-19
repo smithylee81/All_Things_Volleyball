@@ -1,8 +1,8 @@
 <h1 align="center">All Things Volleyball</h1>
 
-<h2 align="center"><img src="/workspace/All_Things_Volleyball/static/testingimages/responsive.png"></h2>
+<h2 align="center"><img src="static/testingimages/responsive.png"></h2>
 
-## About
+# About
 
 An e-commerce website specifically relating to Volleyball clothing, accessories, and equipment, in other words ‘All Things Volleyball’. I, the developer, am a keen Volleyball player at Amateur level and play in a local club. Having an outdoor Tournament approaching I noticed that trying to find any volleyball related products seem to be on lots of different websites and I thought, why not have one place for everything I need? The website is designed to be responsive and accessible on a wide range of devices, making it easy for everyone to access and use whether they're on the go or sitting at a desktop.
 

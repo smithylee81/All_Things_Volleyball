@@ -12,7 +12,7 @@ The Main README documentation can be found under [README.md](README.md)
      >1. [Forgot Password](#forgot-password)
      >2. [My Profile](#my-profile)
      >3. [Update Information](#update-information)
-    - [Product Management](#product-management)
+  - [**Product Management**](#product-management)
   - [**Shopping Bag Testing**](#shopping-bag-testing)
     - [Shopping Bag Empty Keep Shopping](#shopping-bag-empty-keep-shopping)
     - [Add to Bag](#add-to-bag)
@@ -126,7 +126,22 @@ The Main README documentation can be found under [README.md](README.md)
 
 **Outcome: Pass**
 
-- ## Product Management
+### ***Product Management***
+
+**Acceptance Criteria**: A a 'Superuser' I should be able to access the 'Product Management' section and add products and delete or edit where necessary. I should also be able to select an image if desired and have easy to use buttons available to add a product. I should also be able to edit or delete any item/product on each page of the site.
+
+**Summary:** Superuser log in works with visibility of 'Product Management' option under the dropdown in 'My Account'. An easy to use form is presented and the options to select an image, cancel the activity and 'Add Product'. On each page of the site each individual product has the option for me to edit or delete. Screenshots below to demonstrate:
+
+![Product Man](static/testingimages/ProductMan.png "ProductMan")
+
+![Select Image](static/testingimages/SelectImage.png "SelectImage")
+
+![Add Product](static/testingimages/AddProduct.png "AddProduct")
+
+![Edit Delete Options](static/testingimages/EditDeleteOptions.png "EditDeleteOptions")
+
+**Outcome: Pass**
+
 ### ***Shopping Bag Testing***
 
 **Acceptance Criteria**: A user should be able to add items to their shopping bag, access their shopping bag, have the option to update the quantity of their selections, remove items they no longer require, an option to keep shopping and an option to go to the secure checkout. They should be able to complete their order securely and have clear instructions throughout with an option to adjust their shopping bag even at the point of the secure checkout.
@@ -175,56 +190,51 @@ The Main README documentation can be found under [README.md](README.md)
 
 **Acceptance Criteria**: A user should also be able to use the selection bar at the top of the page to browse and select out the items they wish. Each section and dropdown should provide the user with their specific request.
 
-**Summary:** All options selected from the selection bar and dropdown menu's display the correct items requested each time as demonstrated below.
-
-**Outcome: Pass**
+**Summary:** All options selected from the selection bar and dropdown menu's display the correct items requested each time as demonstrated below, along with the filters to display items "Sort by..." such as Price 'low to high', Rating, Name and Category respectively. 
 ### ***All Products***
  - ##### By Price
-
+![ByPriceOption](static/testingimages/ByPriceOption.png "ByPriceOption")
  - ##### By Rating
-
+![By Rating Option](static/testingimages/ByRatingOption.png "ByRatingOption")
  - ##### By Category
-
+![By Category Option](static/testingimages/ByCategoryOption.png "ByCategoryOption")
  - ##### All Products
-
+Displays all products successfully.
 ### ***Clothing***
  - ##### Leggings
+![Leggings](static/testingimages/Leggings.png "Leggings")
  - ##### T-Shirts & Tank Tops
+![Ts and Tanks](static/testingimages/TsandTanks.png "TsandTanks")
  - ##### Hoodies
+![Hoodies](static/testingimages/Hoodies.png "Hoodies")
  - ##### All Clothing
+Displays all clothing successfully.
 
 [Back to contents](#contents)
 
 ### ***Accessories***
+
  - ##### Bags
+![Bags](static/testingimages/Bags.png "Bags")
  - ##### Bottles
+![Bottles](static/testingimages/Bottles.png "Bottles")
  - ##### Knee Pads
+![KneePads](static/testingimages/KneePads.png "KneePads")
  - ##### All Accessories
+Displays all accessories successfully.
 
 [Back to contents](#contents)
 ### ***Equipment***
+
  - ##### Balls
+![Balls](static/testingimages/Balls.png "Balls")
+
  - ##### Nets
+ ![Nets](static/testingimages/Nets.png "Nets")
  - ##### All Equipment
+Displays all equipment successfully.
 
-[Back to contents](#contents)
-
-
-
-
-
-
-![](.png "")
-
-![](.png "")
-
-![](.png "")
-
-[Back to contents](#contents)
-
-
-[Back to contents](#contents)
-
+ **Outcome: Pass**
 
 [Back to contents](#contents)
 
@@ -244,7 +254,6 @@ The Main README documentation can be found under [README.md](README.md)
 
 
 [Back to contents](#contents)
-
 
 # Significant Bugs
 
