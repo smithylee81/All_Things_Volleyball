@@ -78,13 +78,15 @@ adapted from the CI's Boutique Ado project -->
           <!-- Start ACCOUNT & SHOPPING BAG LINKS -->
           <div class="col-12 col-lg-4">
               <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                  <li class="list-inline-item dropdown">
-                    <!-- <a class="text-black nav-link" href="#" id="blog">
+                <li class="list-inline-item">
+                    <a class="text-black nav-link" href="{% url 'view_blog' %}" id="blog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
-                            <div><i class="fa-solid fa-blog"></i>"</div>
+                            <div><i class="fa-solid fa-blog"></i></div>
                             <p class="my-0">Visit our Blog!</p>
                         </div>
-                    </a> -->
+                    </a>
+                </li>
+                  <li class="list-inline-item dropdown">
                     <!-- Start PARENT MENU -->
                       <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">

@@ -45,14 +45,15 @@ The Main README documentation can be found under [README.md](README.md)
     >2. [Nets](#nets)
     >3. [All Equipment](#all-equipment)
 - [**Product Page Testing**](#product-page-testing)
-    - [Keep Shopping](#keep-shopping)
-    - [Add to Bag](#add-to-bag)
-    - [Go to secure checkout](#go-to-secure-checkout)
+    - [Product Page Keep Shopping](#keep-shopping)
+    - [Product Size Option](#product-size-option)
+    - [Product Page Add to Bag](#add-to-bag)
+    - [Product Page Go to secure checkout](#product-page-go-to-secure-checkout)
 - [**Validators and Tools**](#validators-and-tools)
-- [**Significant Bugs**](#significant-bugs)
 - [**Browser Testing**](#browser-testing)
 - [**Mobile and Tablet Testing**](#mobile-and-tablet-testing)
 - [**Additional Testing**](#additional-testing)
+- [**Significant Bugs**](#significant-bugs)
 - [**Further possible improvements**](#further-possible-improvements)
 
 # **User Story Testing**
@@ -236,6 +237,23 @@ Displays all equipment successfully.
 
  **Outcome: Pass**
 
+ ## Product Page Testing
+
+ **Acceptance Criteria**: A user should be able to view each individual product, have the option to keep shopping and the option to add it to their shopping bag. Where size of clothes is relevent the option to choose size should display. ONcce any product has been added to the bag they should have the option on th epage to go to the secure checkout. 
+
+**Summary:** 
+
+**Outcome: Pass**
+
+- ##### Product Page Keep Shopping
+![ProductPageKeepShopping](static/testingimages/ProductPageKeepShopping.png "ProductPageKeepShopping")
+- ##### Product Size Option
+![ProductSizeOption](static/testingimages/ProductSizeOption.png "ProductSizeOption")
+- ##### Product Page Add to Bag
+![ProductPageAddToBag](static/testingimages/ProductPageAddToBag.png "ProductPageAddToBag")
+- ##### Product Page Go to secure checkout
+![Product Page Secure Checkout](static/testingimages/ProductPageSecureCheckout.png "ProductPageSecureCheckout")
+
 [Back to contents](#contents)
 
 # Validators and Tools
@@ -243,6 +261,7 @@ Displays all equipment successfully.
 <!-- * [W3C Markup Validation](https://validator.w3.org/) was used to validate the HTML codes of the website in all pages. There were only minor errors and warnings such as duplication of class, missing attributes in form fields, missing session heading, etc. They were all fixed accordingly to show no errors afterwards. Labels for form fields were added to make it more accessible. -->
 
 ### W3C CSS Validation
+
 <!-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check the CSS syntax. The results show no errors and warnings but the warnings are about prefixes for vendors as I have ran my css codes through a autoprefixer tool. -->
 
 ### JSHint
@@ -252,8 +271,53 @@ Displays all equipment successfully.
 ### PEP8 Online
 <!-- * [PEP8 Online](https://pep8online.com/) was used to check the Python syntax.  -->
 
+[Back to contents](#contents)
+
+## Browser Testing
+
+Using Chrome Development tools, either via the pre-set mobile device resolutions or via the manual responsive tool (using `Google Lighthouse Inspection Tool`), the following was completed:
+
+- Manual responsive testing via Chrome Development Tools, selecting `Inspect`.
+- Cycling through each available device, and performing the tests as detailed above:
+  - iPhone SE
+  - iPhone 12 Pro
+  - iPhone XR
+  - Pixel 5
+  - Samsung Galaxy S8+
+  - Samsung Galaxy S20 ULtra
+  - iPad Air
+  - iPad Mini
+  - Surface Pro 7
+  - Surface Duo
+  - Galaxy Fold
+  - Samsung Galaxy A51/71
+  - Nest Hub
+  - Nest Hub Max
+- Ensure all Features function,appear correctly from at least 320px wide and are presented appropriately on all viewports:
+  - Interaction is enabled.
+  - The majorty of the site fits on device's screen.
+  - The content is legible.
+  - The user can select all available options.
+### Mobile and Tablet Testing
+
+The website was physically tested on an iPhone 11, and an iPad. The following tests were completed:
+
+- Ensure all interactive **icons** are distinguishable, identifiable, and are correctly sized and placed to allow users to interact with each of them via touchscreen individually.
+- Ensure all inputs within data entry fields and forms respond appropriately to touchscreen devices.
+- Ensure all text input fields respond appropriately to on-screen keyboards.
+- Ensure the **Dropdown Nav** can be selected to collapse or reveal.
+
+#### ***Chrome/Firefox/Edge/Safari (iOS)***
+
+- All functionality worked as intended.
 
 [Back to contents](#contents)
+
+
+### Additional Testing
+
+
+
 
 # Significant Bugs
 
@@ -295,23 +359,9 @@ Displays all equipment successfully.
 
 [Back to contents](#contents)
 
-### Browser Testing
-
-
-
-[Back to contents](#contents)
-### Mobile and Tablet Testing
-
-
-
-
-### Additional Testing
-
-
-
 ### Further possible improvements
-<!-- * Further refactoring could have been done to improve clean code and readability. This was done only to small extend due to the time constraint.
-* A more custom designed page for admin dashboard could have been implemented in order to give shop owners a much better user experience in controlling and maintaining the database. -->
+* Further refactoring could have been done to improve clean code and readability. This was done only to small extend due to the time constraint.
+* A more custom designed page for the Django admin dashboard could have been implemented in order to give shop owners/Superusers a much better user experience in controlling and maintaining the database.
 
 ---
 [Back to contents](#contents)
