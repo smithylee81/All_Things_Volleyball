@@ -1,12 +1,13 @@
 from . import views
+from django.urls import path
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', views.PostList.as_view(), name='blog'),
+    path('blog_posts/', views.PostList.as_view(), name='blog_posts'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
-    path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
+    # path('admin/', admin.site.urls),
+    # path('', include('blog.urls')),
 ]
     # path('add_post/', views.add_post, name='add_post'),
     # path('edit/<slug:slug>/', views.edit_post, name='edit_post'),
