@@ -8,10 +8,10 @@ adapted from the CI's Boutique Ado project -->
               <div><i class="fas fa-search fa-lg"></i></div>
               <p class="my-0">Search</p>
           </div>
-      </a>
-      
+      </a> 
+       
         <!-- Start SEARCH FORM DROPDOWN -->
-      <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+      <!-- <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
           <form class="form" method="GET" action="{% url 'products' %}">
               <div class="input-group w-100">
                   <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
@@ -24,11 +24,19 @@ adapted from the CI's Boutique Ado project -->
                   </div>
               </div>
           </form>
-      </div>
+      </div> -->
         <!-- End SEARCH FORM DROPDOWN -->
   </li>
 
         <!-- Start My Account DROPDOWN -->
+        <!-- <li class="list-inline-item">
+            <a class="text-black nav-link" href="{% url 'blog_posts' %}" id="blog">
+                <div class="text-center">
+                    <div><i class="fa-solid fa-blog"></i></div>
+                    <p class="my-0">Visit our Blog!</p>
+                </div>
+            </a>
+        </li> -->
   <li class="list-inline-item dropdown">
       <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center">
@@ -51,7 +59,7 @@ adapted from the CI's Boutique Ado project -->
   </li>
         <!-- End My Account DROPDOWN -->
 
-        <!-- Start Access Shopping Bag DROPDOWN -->
+        <!-- Start Access Shopping Bag  -->
   <li class="list-inline-item">
       <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
           <div class="text-center">

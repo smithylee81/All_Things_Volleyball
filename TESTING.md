@@ -321,15 +321,15 @@ The website was physically tested on an iPhone 11, and an iPad. The following te
 
 # Significant Bugs
 
-### 1. 
+### 1. The search bar function appears to drop down the page on mobile and tablet/smaller devices and overhangs the page content. The search icon does appear on reducing devide size and functions well however very hard to see due to the presence of the main search bar also. 
 
-- 
+- I struggled to fix this and hence giving a poorer user experience looking like the site is broke!
 
 - 
 
 ***Fixed: Yes/No***
 
-### 2. 
+### 2. Implementing Blog models, Post & Comment.
 
 - 
 
