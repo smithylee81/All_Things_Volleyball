@@ -1,11 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# from django.db.models.signals import pre_save
-# from django.utils.text import slugify
-# from django.db.models.signals import post_delete
-# from django.dispatch import receiver
-
 # BLOG POST MODEL
 
 STATUS = (
@@ -28,7 +23,24 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-# BLOG DELETE MODEL
+
+# BLOG COMMENTS MODEL
+class Comment(models.Model):
+    post = models.ForeignKey(Post,on_delete=models.CASCADE,related_name='comments')
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    active = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['created_on']
+
+    def __str__(self):
+        return 'Comment {} by {}'.format(self.body, self.name)
+
+
+# BLOG DELETE MODEL?
 # @receiver(post_delete, sender=Post)
 # def submission_delete(sender, instance, **kwargs):
 #     instance.image.delete(False)
@@ -40,13 +52,3 @@ class Post(models.Model):
 #             instance.author.username + "-" + instance.title)
 
 # pre_save.connect(pre_save_blog_post_receiver, sender=Post)
-
-
-# BLOG COMMENTS MODEL
-# class Comment(models.Model):
-#     post = models.ForeignKey(
-#         Post, related_name='comments', on_delete=models.CASCADE)
-#     comment_author = models.ForeignKey(
-#         User, on_delete=models.CASCADE, related_name="comment", default=1)
-#     comment = models.TextField()
-#     date_added = models.DateTimeField(auto_now_add=True)
