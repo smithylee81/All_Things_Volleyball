@@ -42,13 +42,14 @@ class PostList(generic.ListView):
 
 
 
-# INDIVIDUAL POST DETAILS (COMMENTS)
+# INDIVIDUAL BLOG POST DETAILS (COMMENTS)
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'blog/post_detail.html'
 
 
 def post_detail(request, slug):
+    """ a view to see the individual blog post with potential to add a comment """
     template_name = 'post_detail.html'
     post = get_object_or_404(Post, slug=slug)
     comments = post.comments.filter(active=True)

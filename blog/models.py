@@ -41,15 +41,8 @@ class Comment(models.Model):
         return 'Comment {} by {}'.format(self.body, self.name)
 
 
-# BLOG DELETE MODEL?
-# @receiver(post_delete, sender=Post)
-# def submission_delete(sender, instance, **kwargs):
-#     instance.image.delete(False)
+class comment_form(models.Model):
+    name = models.CharField(max_length=50, null=False, blank=False)
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    body = models.TextField()
 
-
-# def pre_save_blog_post_receiver(sender, instance, *args, **kwargs):
-#     if not instance.slug:
-#         instance.slug = slugify(
-#             instance.author.username + "-" + instance.title)
-
-# pre_save.connect(pre_save_blog_post_receiver, sender=Post)

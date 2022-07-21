@@ -11,5 +11,5 @@ class CommentForm(forms.ModelForm):
        """ Create comment form for blog posts """
 class Meta:
         model = Comment
-        fields = ('name', 'email', 'body')
+        fields = ['name', 'email', 'body']
 

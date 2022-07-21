@@ -11,7 +11,7 @@
   <h3 class="page-section-heading text-center text-uppercase mt-5 mb-0 p-5">Blog Details</h3>
 </div>
 
-<div class="container mt-5 p-5">
+<div class="container mt-0 p-5">
   <div class="row justify-content-center" id="comment-block">
     <div class="col-md-8 card mb-4 mt-3 justify-content-center" id="comment-cards">
       <div class="card-body">
@@ -21,15 +21,17 @@
       </div>
     </div>
    
+
+    <!-- COMMENTS -->
     <div class="col-md-8 card mb-4 mt-3" id="comment-cards">
       <div class="card-body">
-        <!-- comments -->
         <h2>{{ comments.count }} Comments</h2>
+
 
         {% for comment in comments %}
         <div class="comments" style="padding: 10px;">
           <p class="font-weight-bold">
-            {{ comment.name }}
+            {{ comment_form.name }}
             <span class=" text-muted font-weight-normal">
               {{ comment.created_on }}
             </span>
@@ -39,7 +41,10 @@
         {% endfor %}
       </div>
     </div>
-    <div class="col-md-8 card mb-4 mt-3" id="comment-cards">
+
+
+
+    <div class="col-md-8 card mb-6 mt-3" id="comment-cards">
       <div class="card-body">
         {% if new_comment %}
         <div class="alert alert-success" role="alert">
@@ -48,10 +53,24 @@
         {% else %}
         <h3>Got a comment? Leave it here</h3>
         {% load crispy_forms_tags %}
-          <form method="post" style="margin-top: 1.3em;">
+        
+        <fieldset class="rounded px-3 mb-5">
+          <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+
+          <h2 class="card-title">{{ comment_form.name }}</h2>
+          <p class="card-text text-muted h6">{{ comment_form.email }} </p>
+          <p class="card-text">{{ comment_form.body }}</p>
+
+
+      <!--- Tired to put  comment_form.full_name | as_crispy_field 
+                          comment_form.email | as_crispy_field  
+                          comment_form.email | as_crispy_field.   into here but error recieved: "crispy_forms.exceptions.CrispyError: |as_crispy_field got passed an invalid or inexistent field" -->
+      </fieldset>
+
+        <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+                <button type="submit" class="btn btn-primary  btn-lg">Submit Comment</button>
           </form>
         {% endif %}
       </div>
