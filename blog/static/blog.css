@@ -2,12 +2,28 @@
     display: inline-flexbox;
     padding: 0 25px;
     font-size: 18px;
+    font-weight: 1000;
     align-items:center;
     border-radius: 25px;
     width: 100%;
-    color: rgb(173, 166, 166);
+    color: rgb(5, 5, 5);
+    background-color: rgb(164, 161, 161);
+}
+
+.card-text text-muted h6{
+    color: rgb(5, 5, 5);
 }
 
 h3{
     color: gold;
+}
+
+#comment-cards{
+    background-color: rgb(164, 161, 161);
+    margin: 0 auto;
+
+}
+
+#comment-block{
+    
 }

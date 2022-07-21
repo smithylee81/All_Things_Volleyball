@@ -17,14 +17,13 @@
             </div>
     </div>
 
-
 <!-- Posted Blog Entries Column -->
     <div class="row card-row">
         <div class="col-lg-3 deck-col p-4 m-2">
             <div class="card-deck">
               
                     {% for post in post_list %}
-                    <div class="card mb-4 justify-content-center mt-5" id="blog-cards" style="width: 18rem;">
+                    <div class="card mb-4 justify-content-center mt-2" id="blog-cards" style="width: 18rem;">
                         <div class="card-body justify-content-center">
                             <h2 class="card-title">{{ post.title }}</h2>
                             <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>

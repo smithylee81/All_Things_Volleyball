@@ -206,6 +206,7 @@ Features relevant to all pages:
 - I would like to incorporate API's to this website to help pull all volleyball related products from different sites, allowing for more choice and variety of products.
 - I would like to have a 'Favorites' option or 'Add to Wishlist' on each product and which saves to the user profile for the user to easily see.
 - The Profile section to include a go shop/'find your thing' button to navigate out of the page instead of selecting the site logo.
+- I would like to include delete and edit post functions in the Blog App to provide a better user experience overall.
 
 [Back to contents](#contents)
 

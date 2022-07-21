@@ -12,6 +12,7 @@ html {
     margin-bottom: 2rem;
     padding: 2rem;
     text-shadow: black 0px 0px 8px;
+    margin-top: 6rem;
 }
 
 #topnav{
@@ -52,10 +53,12 @@ i.fas.fa-star.mr-1{
 } */
 
 
-h2{
+h5{
     color: gold;
     font-family: 'Indie Flower';
     font-weight: 600;
+    text-shadow: rgb(42, 40, 40) 0px 0px 8px;
+    font-size: 2rem;
 }
 
 
