@@ -1,44 +1,40 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog.css' %}">
+{% endblock %}
+
+
 {% block content %}
 
-<div class="container">
-    <div class="columns is-justify-content-center has-text-centered">
-        <div class="column is-10">
-            <h3 class="title-heading my-4">Welcome to the blog!</h3>
-            <a class="button is-danger my-4" href="{% url 'add_post' %}">New Post<i
-                    class="fas fa-plus-circle m-2"></i></a>
-        </div>
+
+    <div class="container-fluid justify-content-center mt-5 p-5">
+            <h3 class="page-section-heading text-center text-uppercase mt-5 mb-0 p-5">Welcome to our blog!</h3>
+            <div class="buttons">
+            
+            <a href="#" class="btn btn-primary">Add a Post!<i class="fas fa-plus-circle m-2"></i></a>
+            </div>
     </div>
 
-<header class="masthead">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class=" col-md-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h3 class=" site-heading my-4 mt-3 text-white"> Welcome to my awesome Blog </h3>
-                    <p class="text-light">We Love Django As much as you do..! &nbsp
-                    </p>
-                </div>
+
+<!-- Posted Blog Entries Column -->
+    <div class="row card-row">
+        <div class="col-lg-3 deck-col p-4 m-2">
+            <div class="card-deck">
+              
+                    {% for post in post_list %}
+                    <div class="card mb-4 justify-content-center mt-5" id="blog-cards" style="width: 18rem;">
+                        <div class="card-body justify-content-center">
+                            <h2 class="card-title">{{ post.title }}</h2>
+                            <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+                            <p class="card-text">{{post.content|slice:":200" }}</p>
+                            <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read Comments &rarr;</a>
+                        </div>
+                    </div>
+                    {% endfor %}
             </div>
         </div>
     </div>
-</header>
-<div class="container">
-    <div class="row justify-content-center">
-        <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-5 mb-0">
-            {% for post in post_list %}
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">{{ post.title }}</h2>
-                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
+ 
 {%endblock%}

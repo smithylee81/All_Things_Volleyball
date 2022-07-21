@@ -1,0 +1,13 @@
+#blog-cards{
+    display: inline-flexbox;
+    padding: 0 25px;
+    font-size: 18px;
+    align-items:center;
+    border-radius: 25px;
+    width: 100%;
+    color: rgb(173, 166, 166);
+}
+
+h3{
+    color: gold;
+}

@@ -673,9 +673,10 @@ https://all-things-volleyball.herokuapp.com/checkout/wh/
 
 ## **Credits**
 - [djangoproject.com](https://docs.djangoproject.com/en/4.0/topics/db/examples/many_to_one/) for assistance with the post model creation.
-- Code Institute Student Melinda Zhang_alum Git Hub Repository for template on deployment details for MS4 project (https://github.com/MelindaZhang2020/CI-MS4-kumite-dojo#deployment)
-- CI Mentor – Spencer Barriball, thank you for your continued support, guidance, constructive feedback and encouragement. 
-- Code Institute Students 'suzybee1987', 'thanh-cao' & 'AudreyLL88' Git Hub Repositories for inspiration and code review of custom models.
+- Code Institute Student 'MelindaZhang2020' Git Hub Repository for template on deployment details for MS4 project (https://github.com/MelindaZhang2020/CI-MS4-kumite-dojo#deployment)
+- CI Mentor – Spencer Barriball, thank you for your continued support, guidance, constructive feedback and encouragement.
+- CI substitue Mentor (Ronan_mentor) for additional support, advice and encouragement.
+- Code Institute Students 'suzybee1987', 'thanh-cao' & 'AudreyLL88' Git Hub Repositories for inspiration on layout and code review of custom models.
 ### **Code**
 
 - Code Institute (CI) Full Stack Developer Course, 
