@@ -8,8 +8,7 @@ class PostForm(forms.ModelForm):
         fields = ['title', 'slug', 'author','content', 'status']
 
 class CommentForm(forms.ModelForm):
-       """ Create comment form for blog posts """
-class Meta:
+
+    class Meta:
         model = Comment
         fields = ['name', 'email', 'body']
-
