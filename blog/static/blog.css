@@ -7,7 +7,7 @@
     border-radius: 25px;
     width: 100%;
     color: rgb(5, 5, 5);
-    background-color: rgb(164, 161, 161);
+    background-color: rgb(203, 203, 203);
 }
 
 .card-text text-muted h6{
@@ -19,7 +19,7 @@ h3{
 }
 
 #comment-cards{
-    background-color: rgb(164, 161, 161);
+    background-color: rgb(203, 203, 203);
     margin: 0 auto;
 
 }

@@ -30,17 +30,26 @@
      <div class="col-md-8 card mb-4 mt-3" id="comment-cards">
       <div class="card-body">
         <h2>{{ comments.count }} Comments</h2>
+        <hr>
 
 {% if not post.comments.all %}
       No comments yet...<a href="#">
         Add a comment</a>
 {% else %}
+<a href="">Add Comment</a>
+<br/>
+<hr>
     {% for comment in post.comments.all %}
         <strong>{{ comment.name }} -
             {{ comment.created_on }}
         </strong>
+        <br>
           {{ comment.email }}
+        <br>
+        <br>
           {{ comment.body }}
+        <br/><br/>
+        <hr>
     {% endfor %}
 {% endif %}
 

@@ -44,6 +44,14 @@ def post_detail(request, slug):
                                            'comment_form': comment_form})
 
 
+# FUTURE FEATURE PREFERENCES - ADD A COMMENT VIEW
+# class AddCommentView(CreateView):
+#     model = Comment
+#     # form_class = PostForm
+#     template_name = 'add_comment.html'
+#     fields = '__all__'
+
+
 # FUTURE FEATURE PREFERENCES - ADD A BLOG
 # @login_required
 # def add_post(request):
