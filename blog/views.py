@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'blog/blog_posts.html'
-
+    paginate_by = 4
 
 
 # INDIVIDUAL BLOG POST DETAILS (COMMENTS)
