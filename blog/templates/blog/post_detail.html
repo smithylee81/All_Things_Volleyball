@@ -31,6 +31,18 @@
       <div class="card-body">
         <h2>{{ comments.count }} Comments</h2>
 
+{% if not post.comments.all %}
+      No comments yet...<a href="#">
+        Add a comment</a>
+{% else %}
+    {% for comment in post.comments.all %}
+        <strong>{{ comment.name }} -
+            {{ comment.created_on }}
+        </strong>
+          {{ comment.email }}
+          {{ comment.body }}
+    {% endfor %}
+{% endif %}
 
         <!-- {% for comment in comments %}
         <div class="comments" style="padding: 10px;">
@@ -44,16 +56,16 @@
         </div>
         {% endfor %} -->
 
-        {% for comment in comments %}
+        <!-- {% for comment in comments %}
         <div class="card mb-4 justify-content-center mt-2" id="blog-cards" style="width: 18rem;">
             <div class="card-body justify-content-center">
                 <h2 class="card-title">{{ comment.name }}</h2>
                 <p class="card-text text-muted h6">{{ comment.email }} | {{ comment.created_on}} </p>
                 <p class="card-text">{{comment.body|slice:":200" }}</p>
-                <!-- <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read Comments &rarr;</a> -->
+                 <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read Comments &rarr;</a> 
             </div>
         </div>
-        {% endfor %}
+        {% endfor %} -->
 
 
 
@@ -79,8 +91,8 @@
   </div> -->
 
 
-<!-- NEW COMMENT / ADD COMMENT SECTION -->
-    <div class="col-md-8 card mb-6 mt-3" id="comment-cards">
+<!-- FUTURE FEATURES: NEW COMMENT / ADD COMMENT SECTION -->
+    <!-- <div class="col-md-8 card mb-6 mt-3" id="comment-cards">
       <div class="card-body">
         {% if new_comment %}
         <div class="alert alert-success" role="alert">
@@ -98,9 +110,9 @@
           <p class="card-text">{{ comment_form.body }}</p>
 
 
-      <!--- Tired to put  comment_form.name | as_crispy_field 
+      NOTE: Tried to put  comment_form.name | as_crispy_field 
                           comment_form.email | as_crispy_field  
-                          comment_form.body | as_crispy_field.   into here but error recieved: "crispy_forms.exceptions.CrispyError: |as_crispy_field got passed an invalid or inexistent field" -->
+                          comment_form.body | as_crispy_field.   into here but error recieved: "crispy_forms.exceptions.CrispyError: |as_crispy_field got passed an invalid or inexistent field" 
       </fieldset>
 
         <form method="post" style="margin-top: 1.3em;">
@@ -112,5 +124,5 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 {% endblock content %}
