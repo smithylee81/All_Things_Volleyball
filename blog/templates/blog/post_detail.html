@@ -53,51 +53,9 @@
     {% endfor %}
 {% endif %}
 
-        <!-- {% for comment in comments %}
-        <div class="comments" style="padding: 10px;">
-          <p class="font-weight-bold">
-              {{ comments_form.name }}
-            <span class=" text-muted font-weight-normal">
-              {{ comments.email }}
-            </span>
-          </p>
-          {{ comments.body | linebreaks }}
-        </div>
-        {% endfor %} -->
-
-        <!-- {% for comment in comments %}
-        <div class="card mb-4 justify-content-center mt-2" id="blog-cards" style="width: 18rem;">
-            <div class="card-body justify-content-center">
-                <h2 class="card-title">{{ comment.name }}</h2>
-                <p class="card-text text-muted h6">{{ comment.email }} | {{ comment.created_on}} </p>
-                <p class="card-text">{{comment.body|slice:":200" }}</p>
-                 <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read Comments &rarr;</a> 
-            </div>
-        </div>
-        {% endfor %} -->
-
-
-
+        
       </div>
     </div> 
-
-    <!-- <div class="row card-row">
-      <div class="col-lg-3 deck-col p-4 m-2">
-          <div class="card-deck">
-            
-                  {% for post in post_list %}
-                  <div class="card mb-4 justify-content-center mt-2" id="blog-cards" style="width: 18rem;">
-                      <div class="card-body justify-content-center">
-                          <h2 class="card-title">{{ post.title }}</h2>
-                          <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                          <p class="card-text">{{post.content|slice:":200" }}</p>
-                          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read Comments &rarr;</a> 
-                      </div>
-                  </div>
-                  {% endfor %}
-          </div>
-      </div>
-  </div> -->
 
 
 <!-- FUTURE FEATURES: NEW COMMENT / ADD COMMENT SECTION -->

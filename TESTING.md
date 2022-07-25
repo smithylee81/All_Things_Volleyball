@@ -52,7 +52,6 @@ The Main README documentation can be found under [README.md](README.md)
 - [**Validators and Tools**](#validators-and-tools)
 - [**Browser Testing**](#browser-testing)
 - [**Mobile and Tablet Testing**](#mobile-and-tablet-testing)
-- [**Additional Testing**](#additional-testing)
 - [**Significant Bugs**](#significant-bugs)
 - [**Further possible improvements**](#further-possible-improvements)
 
@@ -258,18 +257,40 @@ Displays all equipment successfully.
 
 # Validators and Tools
 ### W3C Markup Validation
-<!-- * [W3C Markup Validation](https://validator.w3.org/) was used to validate the HTML codes of the website in all pages. There were only minor errors and warnings such as duplication of class, missing attributes in form fields, missing session heading, etc. They were all fixed accordingly to show no errors afterwards. Labels for form fields were added to make it more accessible. -->
+* [W3C Markup Validation](https://validator.w3.org/) was used to validate the HTML codes of the website in all pages. There were only minor errors and warnings such as:
+  - missing a required instance of child element,
+  - attribute must point to an element in the same document, 
+  - Attribute http-equiv not allowed on element meta at this point,
+  - Element meta is missing one or more of the following attributes: itemprop, property
+  - Lots of "Bad value" errors due to the Jinja templating {} syntax; "{% static 'css/base.css' %} for attribute href on element link: Illegal character in path segment: { is not allowed" etc. 
+  - Error: Non-space characters found without seeing a doctype first. Expected <!DOCTYPE html>, again due to Jinja templating {} syntax and using "{% extends "base.html" %}" etc.
+  - Warning: Consider adding a lang attribute to the html start tag to declare the language of this document, again due to Jinja templating {} syntax and using "{% extends "base.html" %}" etc.
 
 ### W3C CSS Validation
 
-<!-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check the CSS syntax. The results show no errors and warnings but the warnings are about prefixes for vendors as I have ran my css codes through a autoprefixer tool. -->
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check the CSS syntax. The results show:
+  - One Error in 'base.css" ; "Sorry! We found the following errors (1); URI : TextArea; 161		#000 is not a box-shadow value : #000. 
+  - 6 'warnings':
+
+![Base Css Validator Warnings](static/testingimages/BaseCssValidatorWarnings.png "BaseCssValidatorWarnings")
+
+
 
 ### JSHint
-<!-- * [JSHint](https://jshint.com/) was used to check the JavaScript syntax. There were also minor warnings such as missing semicolons and missing variable declaration which were all fixed accordingly. There are still some warnings about unused variables and functions but it is because some of the variables are from Bootstrap (such as `scrollspy`, `bootstrap`), Stripe, or other javascript files.
-  ![]()
-  ![]() -->
+* [JSHint](https://jshint.com/) was used to check the JavaScript syntax. There were 3 minor warnings:
+  - Three warnings; 
+   1. "34	'template literal syntax' is only available in ES6 (use 'esversion: 6')."
+   2. "98	'template literal syntax' is only available in ES6 (use 'esversion: 6')."
+   3. "117	Missing semicolon."
 ### PEP8 Online
-<!-- * [PEP8 Online](https://pep8online.com/) was used to check the Python syntax.  -->
+* [PEP8 Online](http://pep8online.com/) was used to check the Python syntax.There were only warnings about "line too long" or "indentation" for which most were all fixed accordingly. Some "lines too long" were left due to time constraints as these do not affect the overall code.
+
+The only warning left is on file settings.py file where there are still 4 lines too long at variable AUTH_PASSWORD_VALIDATORS. The longest line here is 91 characters. As this is system's related string and doesn't affect readability of code this has been left as is:
+
+![PEP8 Settings.py Line Too Long](static/testingimages/PEP8Settings.pyLineTooLong.png "PEP8Settings.pyLineTooLong")
+
+![PEP8 Settings.py](static/testingimages/PEP8Settings.py.png "PEP8Settings.py.png")
+
 
 [Back to contents](#contents)
 
@@ -314,47 +335,23 @@ The website was physically tested on an iPhone 11, and an iPad. The following te
 [Back to contents](#contents)
 
 
-### Additional Testing
-
-
-
-
 # Significant Bugs
 
-### 1. The search bar function appears to drop down the page on mobile and tablet/smaller devices and overhangs the page content. The search icon does appear on reducing devide size and functions well however very hard to see due to the presence of the main search bar also. 
+### 1. The search bar function appears to drop down the page on mobile and tablet/smaller devices and overhangs the page content. The search icon does appear on reducing device size and functions well however very hard to see due to the presence of the main search bar also. 
 
 - I struggled to fix this and hence giving a poorer user experience looking like the site is broke!
 
-- 
+- I eventually deleted the "mobile-top-header.html" code which helped resolve duplicate icons being shown on reduction of screen size. However my placement of Blog, Account & Shopping Bag Icons remain poor on smaller screens. I'm assuming more time and adding some media queries would resolve this issue.
 
-***Fixed: Yes/No***
+***Fixed: No***
 
-### 2. Implementing Blog models, Post & Comment.
+### 2. Implementing a 'Blog' model, posts & comments was particularly a challenge for me, using a significant amount of time re-watching CI tutorial videos, sourcing web tutorials & YouTube Videos to assit in adding some 'custom models' to the project.
 
-- 
+- Several code attempts tried along with viewing multiple web tutorials and YouTube videos (as outlined in the README.md document)
 
-- 
+- I finally managed to render comments and blog posts pulling these through from the backend of the Django Administration site with the current code, following a few different tutorials & videos. This issue was presented given the developers very basic knowledge and current understanding of the Python and Django models, views, URL's etc. I believe if I had gained a deeper insight into these I may have been able to implement these a little more easily. 
 
-
-***Fixed: Yes/No***
-
-## 
-
-- 
-
-- 
-
-- 
--  
-- 
-
-***Fixed: Yes/No***
-
-## 
-
-- 
-
-***Fixed: Yes/No***
+***Fixed: Yes***
 
 
 [Back to contents](#contents)
@@ -362,6 +359,8 @@ The website was physically tested on an iPhone 11, and an iPad. The following te
 ### Further possible improvements
 * Further refactoring could have been done to improve clean code and readability. This was done only to small extend due to the time constraint.
 * A more custom designed page for the Django admin dashboard could have been implemented in order to give shop owners/Superusers a much better user experience in controlling and maintaining the database.
+* Further sytling and media queries to allow a better user experience on smaller screen devices. 
+* Adding extra functions for the user to 'Add a Comment' & 'Add a Post' would complete the users experience of the Blog application. 
 
 ---
 [Back to contents](#contents)

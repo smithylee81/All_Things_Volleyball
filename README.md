@@ -676,8 +676,13 @@ https://all-things-volleyball.herokuapp.com/checkout/wh/
 - [djangoproject.com](https://docs.djangoproject.com/en/4.0/topics/db/examples/many_to_one/) for assistance with the post model creation.
 - Code Institute Student 'MelindaZhang2020' Git Hub Repository for template on deployment details for MS4 project (https://github.com/MelindaZhang2020/CI-MS4-kumite-dojo#deployment)
 - CI Mentor – Spencer Barriball, thank you for your continued support, guidance, constructive feedback and encouragement.
-- CI substitue Mentor (Ronan_mentor) for additional support, advice and encouragement.
+- CI substitue Mentor Ronan McClelland (Ronan_mentor) for additional support, advice and encouragement.
 - Code Institute Students 'suzybee1987', 'thanh-cao' & 'AudreyLL88' Git Hub Repositories for inspiration on layout and code review of custom models.
+- Several blog & comment web tutorials and YouTube videos:
+    - [Codemy.com](https://www.youtube.com/watch?v=hZrlh4qU4eQ) - 'Build A Blog Comment Section - Django Blog #33'
+    - [www.geeksforgeeks.org](https://www.geeksforgeeks.org/django-project-to-create-a-comments-system/) - 'Django project to create a Comments System'
+    - [https://tutorial-extensions.djangogirls.org] (https://tutorial-extensions.djangogirls.org/en/homework_create_more_models)- 'Homework: create comment model'
+
 ### **Code**
 
 - Code Institute (CI) Full Stack Developer Course, 
@@ -688,15 +693,18 @@ https://all-things-volleyball.herokuapp.com/checkout/wh/
 ### **Content**
 
 - README.md & TESTING.md help came from: 
-  -[Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
+  - [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
+  - [Ben Kavanagh Git Hub Repository] (https://github.com/BAK2K3)
   
 ### **Layout**
 
-- Code Institute tutorials, particularly the Boutique Ado walkthrough project. 
+- Code Institute tutorials, particularly the Boutique Ado walkthrough project.
+- Web Tutorials & YouTube Videos as highlighted above. 
 
 ### **Acknowledgements**
 
-- My CI Mentor Spencer Barriball for the continued support, encouragement and helpful advice and feedback.
-- My family and friends for testing the site and giving feedback.
+- My CI Mentor Spencer Barriball & substitue mentor Ronan McClelland 'Ronan_mentor' for the continued support, encouragement, guidance and helpful advice and feedback.
+- My partner, family and friends for their continues support, encouragement and motivation and also for testing the site and giving feedback.
+- Fellow coder & developer 
 
 [Back to contents](#contents)
