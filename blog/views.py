@@ -11,36 +11,6 @@ class PostList(generic.ListView):
     template_name = 'blog/blog_posts.html'
 
 
-# ADD A BLOG
-# @login_required
-# def add_post(request):
-#     """ a view to add a post to the blog """
-
-#     if request.method == "POST":
-#         form = PostForm(request.POST or None, request.FILES or None)
-#         if form.is_valid():
-#             obj = form.save(commit=False)
-#             author = request.user
-#             obj.author = author
-#             obj.save()
-
-#             messages.success(request, "Successfully added your blog post")
-#             return redirect(reverse('post_detail', args=[obj.slug]))
-#         else:
-#             messages.error(
-#                 request, "Failed to add blog post, please check the form is \
-#                     valid")
-#     else:
-#         form = PostForm()
-
-#     template = 'blog/add_post.html'
-#     context = {
-#         'form': form,
-#     }
-
-#     return render(request, template, context)
-
-
 
 # INDIVIDUAL BLOG POST DETAILS (COMMENTS)
 class PostDetail(generic.DetailView):
@@ -68,7 +38,37 @@ def post_detail(request, slug):
     else:
         comment_form = CommentForm()
 
-    return render(request, post_detail.html, {'post': post,
+    return render(request , template_name, {'post': post,
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
+
+
+# FUTURE FEATURE PREFERENCES - ADD A BLOG
+# @login_required
+# def add_post(request):
+#     """ a view to add a post to the blog """
+
+#     if request.method == "POST":
+#         form = PostForm(request.POST or None, request.FILES or None)
+#         if form.is_valid():
+#             obj = form.save(commit=False)
+#             author = request.user
+#             obj.author = author
+#             obj.save()
+
+#             messages.success(request, "Successfully added your blog post")
+#             return redirect(reverse('post_detail', args=[obj.slug]))
+#         else:
+#             messages.error(
+#                 request, "Failed to add blog post, please check the form is \
+#                     valid")
+#     else:
+#         form = PostForm()
+
+#     template = 'blog/add_post.html'
+#     context = {
+#         'form': form,
+#     }
+
+#     return render(request, template, context)

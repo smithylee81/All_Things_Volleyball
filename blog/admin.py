@@ -7,12 +7,9 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
 
-#class CommentAdmin(admin.ModelAdmin):
-    # list_display = ('comment', 'date_added')
-
 
 admin.site.register(Post, PostAdmin)
-#admin.site.register(Comment, CommentAdmin)
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
@@ -23,3 +20,5 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(active=True)
+    
+#admin.site.register(Comment, CommentAdmin)
