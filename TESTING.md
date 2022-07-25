@@ -49,6 +49,7 @@ The Main README documentation can be found under [README.md](README.md)
     - [Product Size Option](#product-size-option)
     - [Product Page Add to Bag](#add-to-bag)
     - [Product Page Go to secure checkout](#product-page-go-to-secure-checkout)
+- [**Blog and Comments Testing**](#blog-and-comments-testing)
 - [**Validators and Tools**](#validators-and-tools)
 - [**Browser Testing**](#browser-testing)
 - [**Mobile and Tablet Testing**](#mobile-and-tablet-testing)
@@ -238,12 +239,9 @@ Displays all equipment successfully.
 
  ## Product Page Testing
 
- **Acceptance Criteria**: A user should be able to view each individual product, have the option to keep shopping and the option to add it to their shopping bag. Where size of clothes is relevent the option to choose size should display. ONcce any product has been added to the bag they should have the option on th epage to go to the secure checkout. 
+ **Acceptance Criteria**: A user should be able to view each individual product, have the option to keep shopping and the option to add it to their shopping bag. Where size of clothes is relevent the option to choose size should display. Once any product has been added to the bag they should have the option on the page to go to the secure checkout. 
 
-**Summary:** 
-
-**Outcome: Pass**
-
+**Summary:** All options selected display the correct functions as demonstrated below.
 - ##### Product Page Keep Shopping
 ![ProductPageKeepShopping](static/testingimages/ProductPageKeepShopping.png "ProductPageKeepShopping")
 - ##### Product Size Option
@@ -252,6 +250,28 @@ Displays all equipment successfully.
 ![ProductPageAddToBag](static/testingimages/ProductPageAddToBag.png "ProductPageAddToBag")
 - ##### Product Page Go to secure checkout
 ![Product Page Secure Checkout](static/testingimages/ProductPageSecureCheckout.png "ProductPageSecureCheckout")
+
+**Outcome: Pass**
+
+ ## Blog and Comments Testing
+
+ **Acceptance Criteria**: Posted blogs being able to be seen on the one page with the optin to enter into the actual blog itself where the user can read any comments about the blog, go back to the main blog page and have the option to add a comment should they wish to do so, the latter being a 'Future Feature' the developer would like to implement. Current custom models for this pull data through from the Django Administration backend. 
+
+**Summary:** All options ('Visit our Blog!' and 'Read Comments') when selected display the correct pages and detail pulled from the Django Administration page as demonstrated below.
+
+- ##### Blog Posts Main Page
+![Visit Blog Posts Main Page](static/testingimages/VisitBlogPostsMainPage.png "VisitBlogPostsMainPage")
+
+- ##### Read Blog and Comments Success
+![Read Blog and Comments Success](static/testingimages/ReadBlogandCommentsSuccess.png "ReadBlogandCommentsSuccess")
+
+- ##### How To Play Post Django Admin
+![How To Play Post Django Admin](static/testingimages/HowToPlayPostDjangoAdmin.png "HowToPlayPostDjangoAdmin")
+
+- ##### How To Play Comments Django Admin
+![How To Play Comments Django Admin](static/testingimages/HowToPlayCommentsDjangoAdmin.png "HowToPlayCommentsDjangoAdmin")
+
+**Outcome: Pass**
 
 [Back to contents](#contents)
 
@@ -273,8 +293,6 @@ Displays all equipment successfully.
   - 6 'warnings':
 
 ![Base Css Validator Warnings](static/testingimages/BaseCssValidatorWarnings.png "BaseCssValidatorWarnings")
-
-
 
 ### JSHint
 * [JSHint](https://jshint.com/) was used to check the JavaScript syntax. There were 3 minor warnings:

@@ -704,7 +704,6 @@ https://all-things-volleyball.herokuapp.com/checkout/wh/
 ### **Acknowledgements**
 
 - My CI Mentor Spencer Barriball & substitue mentor Ronan McClelland 'Ronan_mentor' for the continued support, encouragement, guidance and helpful advice and feedback.
-- My partner, family and friends for their continues support, encouragement and motivation and also for testing the site and giving feedback.
-- Fellow coder & developer 
+- My partner, family and friends for their continued support, encouragement and motivation and also for testing the site and giving feedback.
 
 [Back to contents](#contents)
